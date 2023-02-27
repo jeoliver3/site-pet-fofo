@@ -1,0 +1,103 @@
+.home
+{
+    position: relative;
+    right: -5%;
+    top: 40px;
+    text-decoration: none;
+    
+}
+.home:hover
+{
+    color:gold;
+}
+
+
+
+.container
+{
+    margin: 40px 350px;
+    background-color: white;
+    border: solid 2px lightgrey;
+    border-radius: 8px;
+    max-width: 60%;
+    justify-content:center;
+    display: grid;
+   
+
+}
+
+form label
+{
+    position: absolute;
+    left: 10px;
+    top:30px;
+}
+.input-padrao
+{
+    display: block;
+    position: relative;
+    right: -30px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    width: 78%;
+    height: 30px;
+   
+    
+}
+    .btn-entrar
+    {
+        display: block;
+        width: 430px;
+        padding: 15px 0;
+        background-color: gold;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border: none;
+        border-radius: 12px;
+        transition: 1s all;
+        cursor: pointer;
+        margin:30px;
+        align-items: center;
+        transition: 1s all;
+    }
+    .btn-entrar:hover
+    
+    {
+        background-color: darkorange;
+        transform: scale(1);
+    }
+    .btn-criarConta
+    {
+    display: block;
+    width: 430px;
+    padding: 15px 0;
+    background-color: gold;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    transition: 1s all;
+    cursor: pointer;
+    margin:30px;
+    align-items: center;
+    transition: 1s all;
+
+    }
+    .btn-criarConta:hover
+    {
+        background-color: darkorange;
+        transform: scale(1);
+    }
+    span 
+    {
+        
+        display: block;
+        text-align: center;
+        
+    }
+    a
+    {
+        text-decoration: none;
+    }

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contato.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
+    <title>Contato</title>
+</head>
+
+<body>
+    <header>
+        <div class="conteudo-menu">  
+             
+        
+            <nav>
+                
+                <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./Produtos/produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        
+        </div>
+    </header>
+    <img class="logo-produto" src="./img/logo-produtos.png" alt="logo-cachorro">
+
+    <main>
+        <form>
+            <label for="nome">Nome e Sobrenome</label>
+            <input type="text" id="nome" class="input-padrao" required>
+            <!--required que dizer que o campo tem que ser obrigatoriamente preenchido-->
+
+            <label for="email">Email</label>
+            <input type="text" id="email" class="input-padrao" required placeholder="Digite seu email">
+
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" class="input-padrao" required placeholder="(xx)xxxxx-xxxx">
+            
+            <label class="mensagem-dog" for="mensagem">Mensagem</label>
+            <textarea cols="50" rows="10" id="mensagem" class="input-padrao" required>
+
+            </textarea>
+        
+        <div>
+            <p>Nossos Contatos</p>
+
+            <label  for="email-radio"><input class="radio" type="radio" name="contato" value="email" id="email-radio">Email</label>
+            
+            <label  for="telefone-radio"><input class="radio" type="radio" name="contato" value="telefone" id="telefone-radio">Telefone</label>
+            
+            <label  for="whatsapp-radio"> <input class="radio" type="radio" name="contato" value="whatsapp" id="whatsapp-radio" checked>WhatsApp</label>
+           <!--add o checked faz com que o radio já fique marcado quando carregar a página-->
+
+            <!--com o name desses inputs, será possível marcar apenas
+            uma opção no radio. Dessa forma todos eles passam a ser do mesmo
+             grupo e quando clica em um, desclica o outro.-->
+        </div>
+
+        <div>
+            <p>Qual horário prefere ser atendido?</p>
+            <select>
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Noite</option>
+            </select>
+        </div>
+    
+        <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+        <input type="submit" value="Enviar Formulario" class="submit">
+    </form>
+    
+    <!--Criação de uma tabela. tr para table row(linha) e td para table data 
+        (data cell- células). Para o cabeçario, tag thead-->
+    <table>
+        <thead>
+            <tr>
+            
+                <th>Dia</th> <!--th célula do head-->
+                <th>Horário</th>     
+            </tr>
+        </thead>
+          
+        <tbody> <!--tbody é o corpo da tabela-->
+            <tr>
+                <td>Segunda</td>
+                <td>8hs às 20hs</td>
+            </tr>
+               
+            <tr>
+                <td>Quarta</td>
+                <td>8hs às 20hs</td>
+            </tr>
+              
+            <tr>
+                <td>Sexta</td>
+                <td>8hs às 20hs</td>
+            </tr>
+        </tbody>
+    </table>
+            
+        
+    </main>
+</body>
+
+<footer>
+       
+    <p> &copy; 2022  Pet Fofo Adoção</p>
+    
+    <ul class="icon-footer">
+        <li>
+            <a href="www.instagram.com"><img  src="./img/instagram.png" alt="instagram"></a>
+        </li>
+        <li> 
+            <a href="www.facebook.com"><img src="./img/icons8-facebook-novo-16.png" alt="facebook"></a>
+        </li>
+    </ul>
+</footer>
+</html>
