@@ -1,5 +1,7 @@
 <h1 text-align="center">Site Pet Fofo Adoção</h1>
 
+<a href="http://127.0.0.1:5500/index.html">Ver Site</a>
+
 <p>
 Site criado para testar conhecimentos em HTML , CSS e JavaScript.
 
