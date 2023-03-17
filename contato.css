@@ -1,0 +1,214 @@
+
+
+body
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.logo-produto
+{
+    max-width: 15%;
+    grid-column: 2;
+    display: block;
+    padding: 20px;
+}
+
+
+
+nav li
+{
+    display: inline;
+    margin: 20px;
+    background-color: #cccccc;
+    padding: 15px 10px;
+    border: solid gray;
+    border-radius: 5px;
+}
+nav a 
+{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+li a 
+{
+    text-decoration: none;
+}
+
+.conteudo-menu
+{
+    position: relative; /* traz o menu de navegacao para dentro da div*/
+    width: 940px;
+    margin: 50px;
+    top:60px;
+}
+
+nav
+{
+    position: absolute;
+    top:0; /* posicionando no topo */
+    right: 0; /* no canto direito*/
+    
+}
+
+nav a:hover
+{
+    color: gold;
+    
+}
+
+main
+{
+    width: 940px;
+    margin: 0 auto;
+    
+}
+
+form
+{
+    margin: 40px 0;
+
+}
+
+form label, form p
+{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 20px;
+    
+    
+
+}
+
+/* Caracter do dog obtido atraves do site unicode. Copiado e colado direto no css*/
+.mensagem-dog:before
+{
+    content: "🐶";
+    margin:5px;
+}
+
+.radio 
+{
+    display: inline-block;  
+    margin: 10px;
+    accent-color: green;
+}
+
+
+
+.input-padrao{
+    
+    display: block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    width: 50%;
+}
+
+.checkbox
+{
+    display: inline-block;
+    font-size: 20px;    
+    margin-top: 20px;
+
+    
+}
+
+.submit
+{
+    
+    display: block;
+    width: 40%;
+    padding: 15px 0;
+    background-color: gold;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    transition: 1s all;
+    cursor: pointer;
+    /*setando tempo de transição quando a mudança de cor ocorrer para todos*/
+    
+    
+}
+
+.submit:hover
+{
+    background-color: darkorange;
+    transform: scale(1.2);
+    /*transform amumenta o elemento em 20% */
+    
+    
+}
+
+table
+{
+    margin: 20px 0 40px;
+}
+
+thead
+{
+    background: #555555;
+    color:white;
+    font-weight: bold;
+}
+
+td, th
+{
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+footer
+{
+    
+    background-color: #f7f2f2;
+    display: flex;
+    justify-content: left;
+    margin: 20px;
+    height: 80px;
+    
+    
+    
+}
+
+footer p
+{
+    
+    font-weight: bold;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: gray;
+    
+}
+
+
+ 
+.icon-footer li
+{
+    
+    list-style: none;
+    float: left;
+    background-color:gold;
+    border-radius: 20px;
+    width: 24px;
+    height: 24px;
+    padding: 8px;
+    margin-left: 5px;
+   
+   
+}
+.icon-footer li:hover
+{
+    background-color: yellow;
+}
+
+
+.icon-footer li img
+{
+    width: 80%;
+    margin: 2px;
+}

@@ -1,0 +1,517 @@
+
+body
+{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    height: 100vh;
+    
+}
+
+header
+{
+    max-width: 100%;
+}
+
+label h1
+{
+    font-size: 30px;
+    padding: 20px;
+}
+
+
+.search-box
+{
+    position: absolute;
+    top:6%;
+    left:20%;
+    height: 30px;
+    padding: 10px;
+    border-radius: 40px;
+    background: #f7f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-input
+{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition: .4s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.search-btn
+{
+    width: 6px;
+    height: 10px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.search-box:hover > .search-input
+{
+    width: 240px;
+    padding: 0 6px;
+}
+
+::-webkit-input-placeholder
+{
+    color:darkblue;
+    
+}
+
+nav ul li
+{
+    display: inline-block;
+    margin: 0 5px;
+    line-height: 80px;
+    
+}
+nav ul
+{
+    float: right;
+    margin-right: 20px;
+    margin-top: -90px;
+}
+nav a 
+{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 14px;
+    
+}
+
+nav li a 
+{
+    text-decoration: none;
+}
+
+nav
+{
+    
+    background: gold;
+    height: 80px;
+    width: 100%;
+    
+    
+}
+
+nav a:hover
+{
+    color: orange;
+    transition: 0.5s;
+    
+    
+}
+.check-btn
+{
+    font-size: 30px;
+    color:white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    
+}
+
+#check
+{
+    display: none;
+}
+.entrar
+{
+    
+    margin:10px;
+    font-size: 15px;
+    text-decoration: none;
+    position: relative;
+    left: 110%;
+    top: 100px;
+    
+}
+.entrar:hover
+{
+    color:gold;
+}
+
+
+
+
+.principal h2
+{
+    text-align: start;
+    font-size: 30px;
+    margin: 30px;
+    text-align: center;
+    
+}
+
+.principal p 
+{
+    text-align:justify;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr fr;
+    line-height: 30px;
+    margin: 30px 30px;
+}
+
+
+
+
+.bunner
+{
+    
+    max-width: 100%;
+    display: block;
+    margin:40px;
+    
+}
+
+/* Utilizando seletores avançados do CSS. Com o conceito de herança, a classe .pricipal
+como elemento âncora e o próximo irmão seria .beneficios. Com operador + concatena*/
+.principal + .beneficios
+{
+    /*display: grid;
+
+    background-color: lightyellow;
+    width: 40%;
+    margin: 30px 30px ;
+    justify-content: center;*/
+    
+    
+    padding: 20px;
+    margin: 10px;
+    display: grid;
+    justify-items: center;
+}
+.beneficios h3
+{
+    text-align: start;
+    font-size: 30px;    
+    margin: 10px;
+    padding: 10px 10px;
+    
+
+}
+
+
+.itens-beneficio
+{
+    background-color: lightyellow;
+    display: grid;
+    width: 50%;
+    grid-template-columns: 150 1fr;
+    gap: 10px;
+    padding: 20px;
+    margin: 20px; 
+    
+
+}
+
+.itens-beneficio li
+{
+    grid-column: 2;
+}
+
+.itens-beneficio img
+
+{ 
+    max-width: 30px;
+    display: grid;
+    justify-self: right;
+    
+}
+
+ul
+{
+    display: inline-block;
+    list-style: none;
+    
+}
+
+ul li
+{
+    margin: 10px;
+}
+
+.mapa
+{
+    padding: 20px;
+    margin: 10px;
+    display: grid;
+    justify-items: center;
+
+}
+
+.mapa h3
+{
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.video
+{
+    padding: 20px;
+    margin: 10px;
+    display: grid;
+    justify-items: center;
+}
+
+footer
+{
+    
+    background-color: #f7f2f2;
+    display: flex;
+    height: 80px;
+    justify-content: left;
+    margin: 20px;
+    
+    
+    
+}
+
+footer p
+{
+    
+    font-weight: bold;
+    font-size: 12px;
+    padding-top: 20px;
+    padding-left: 10px;
+    color: gray;
+    
+}
+
+
+ 
+.icon-footer li
+{
+    
+    list-style: none;
+    float: left;
+    background-color:gold;
+    border-radius: 20px;
+    width: 24px;
+    height: 24px;
+    padding: 8px;
+    margin-left: 5px;
+   
+}
+.icon-footer li:hover
+{
+    background-color: yellow;
+}
+
+
+.icon-footer li img
+{
+    width: 80%;
+    margin: 2px;
+}
+
+/* Responsivo */
+
+@media screen and (max-width:600px)
+{
+      .principal, .itens-beneficio
+    {
+        width: auto;
+    }
+    
+  
+
+    .principal p
+    {
+        text-align:justify;
+    }
+    .video, .mapa
+    {
+        width: auto;
+        
+    }
+    .mapa p
+    {
+        text-align: center;
+    }
+    
+    .principal + .beneficios
+{
+    background-color: lightyellow;
+    width: 45%;
+    box-sizing: border-box;
+    margin: auto;
+    
+}
+.beneficios h3
+{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;    
+
+}
+
+
+.itens-beneficio
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6px;
+    
+    
+}
+
+.itens-beneficio li
+{
+    grid-column: 2;
+}
+
+.itens-beneficio img
+
+{ 
+    max-width: 30px;
+}
+.principal p 
+{
+    text-align:center;
+    font-size: 15px;
+    display: grid;
+    grid-template-columns:  1fr;
+    line-height: 20px;
+    margin: 30px 30px;
+}
+.principal h2
+{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px;
+    
+}
+.mapa h3
+{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.bunner
+{
+   
+    max-width: 40%;
+    margin: auto;
+    margin-top: 100px;
+
+}
+
+label h1
+{
+    text-align: start;
+}
+.check-btn
+{
+    display: block;
+}   
+
+#check:checked ~ ul
+{
+    left:0;
+}
+nav ul
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:80px;
+    background: white;
+    text-align: center;
+    left: -200%;
+    
+    transition: all 0.5s;
+}
+nav ul li
+{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+    
+}
+nav ul li a {
+    font-size: 20px;
+
+}
+nav a:hover
+{
+    background: none;
+    color: gold;
+}
+
+nav
+{
+    
+    background: gold;
+    height: 80px;
+    width: 100%;
+    
+}
+.search-box
+{
+    position: absolute;
+    top:7%;
+    left:60%;
+    height: 15px;
+    padding: 8px;
+    border-radius: 40px;
+    background: #f7f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-input
+{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    font-size: 12px;
+    line-height: 20px;
+    width: 0;
+    transition: .4s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.search-btn
+{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.search-box:hover > .search-input
+{
+    width: 100px;
+    padding: 0 4px;
+}
+
+::-webkit-input-placeholder
+{
+    color:darkblue;
+    
+}
+}
